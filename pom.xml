@@ -160,6 +160,42 @@
 
         <dependency>
             <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan.protostream</groupId>
+            <artifactId>protostream</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan.protostream</groupId>
+            <artifactId>protostream-types</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan.protostream</groupId>
+            <artifactId>protostream-processor</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-client-hotrod</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-remote-query-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-query-dsl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.infinispan</groupId>
             <artifactId>infinispan-core</artifactId>
         </dependency>
 
