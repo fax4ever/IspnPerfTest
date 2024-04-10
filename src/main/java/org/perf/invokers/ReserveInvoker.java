@@ -85,7 +85,7 @@ public class ReserveInvoker implements Invoker {
         Query<Object[]> query = queryFactory.create(
                 "select fromAccountId, toAccountId, action, amount FROM uetraction.UETRAction WHERE fromAccountId = :accountId or toAccountId = :accountId");
         query.setParameter("accountId", accountId);
-        List<Object[]> list = query.maxResults(1000).hitCountAccuracy(10).execute().list();
+        List<Object[]> list = query.maxResults(1000).hitCountAccuracy(10).list();
 
         return list.stream()
                 .map(action -> new BigDecimal((String) action[3]))
