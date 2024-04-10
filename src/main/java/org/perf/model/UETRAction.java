@@ -13,11 +13,11 @@ public class UETRAction implements Serializable {
 
     private static final long serialVersionUID = 1434254484114366251L;
     @ProtoField(number = 1)
-    @Basic
+    @Basic(projectable = true)
     String fromAccountId;
 
     @ProtoField(number = 2)
-    @Basic
+    @Basic(projectable = true)
     String toAccountId;
 
     @ProtoField(number = 3)
